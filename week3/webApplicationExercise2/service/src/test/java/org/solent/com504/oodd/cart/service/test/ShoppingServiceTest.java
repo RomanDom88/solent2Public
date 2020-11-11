@@ -5,12 +5,14 @@
  */
 package org.solent.com504.oodd.cart.service.test;
 
+import java.util.List;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.solent.com504.oodd.cart.model.dto.ShoppingItem;
 import org.solent.com504.oodd.cart.model.service.ShoppingService;
 import org.solent.com504.oodd.cart.service.ServiceObjectFactory;
 
@@ -25,11 +27,18 @@ public class ShoppingServiceTest {
     @Before
     public void before(){
         shoppingService = ServiceObjectFactory.getShoppingService();
-        
+        shoppingService.getAvailableItems().clear();
     }
     
     @Test
     public void test1() {
         assertNotNull(shoppingService);
     }
-}
+    @Test
+    public void ShoppingSericeTest() {
+        
+        ShoppingItem item = new ShoppingItem();
+        
+        assertFalse(item.getQuantity().equals(0));
+        item.setName("Example");
+    }
