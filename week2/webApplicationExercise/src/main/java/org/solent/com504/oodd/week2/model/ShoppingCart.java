@@ -12,7 +12,7 @@ import java.util.List;
  * @author cgallen
  */
 public interface ShoppingCart {
-
+            
     public List<ShoppingItem> getShoppingCartItems();
     
     public void addItemToCart(ShoppingItem shoppingItem);
