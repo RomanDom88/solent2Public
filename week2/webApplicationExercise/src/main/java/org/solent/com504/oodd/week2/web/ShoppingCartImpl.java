@@ -41,11 +41,10 @@ public class ShoppingCartImpl implements ShoppingCart{
 
     @Override
     public double getTotal(){
-        List<ShoppingItem> itemlist  = new ArrayList();
         double sum = 0;
         for(String itemUUID :itemMap.keySet()){
         ShoppingItem shoppingCartItem = itemMap.get(itemUUID);
-        sum += shoppingCartItem.getPrice();
+        sum = sum + shoppingCartItem.getPrice()*shoppingCartItem.getQuantity();
     }
     return sum;
     }
