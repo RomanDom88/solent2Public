@@ -12,7 +12,8 @@ public class AnimalTypeDaoImpl implements AnimalTypeDao {
     List<AnimalType> supportedAnimalTypes = new ArrayList(Arrays.asList(
             new AnimalType("Dog", "woof"),
             new AnimalType("Cat", "meow"),
-            new AnimalType("Cow", "moo")
+            new AnimalType("Cow", "moo"),
+            new AnimalType("Goose", "Honk")
     ));
 
     @Override
