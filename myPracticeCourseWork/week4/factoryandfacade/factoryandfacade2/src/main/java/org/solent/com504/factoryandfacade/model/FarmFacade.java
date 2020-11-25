@@ -7,6 +7,8 @@ public interface FarmFacade {
     public List<Animal> getAllAnimals();
 
     public void addDog(String name);
+    
+    public void addDuck(String name);
 
     public void addCat(String name);
 

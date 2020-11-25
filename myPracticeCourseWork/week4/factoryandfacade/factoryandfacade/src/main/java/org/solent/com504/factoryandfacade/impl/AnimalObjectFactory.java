@@ -3,6 +3,7 @@ package org.solent.com504.factoryandfacade.impl;
 import org.solent.com504.factoryandfacade.model.Animal;
 import org.solent.com504.factoryandfacade.model.Cat;
 import org.solent.com504.factoryandfacade.model.Cow;
+import org.solent.com504.factoryandfacade.model.Duck;
 import org.solent.com504.factoryandfacade.model.Dog;
 import org.solent.com504.factoryandfacade.model.FarmFacade;
 
@@ -13,6 +14,10 @@ public class AnimalObjectFactory{
 
     public static Animal createCat() {
         return new Cat();
+    }
+    
+    public static Animal createDuck() {
+        return new Duck();
     }
 
     public static Animal createDog() {

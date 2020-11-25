@@ -22,6 +22,10 @@ public class FarmFacadeImpl implements FarmFacade {
     public void addDog(String name) {
         throw new UnsupportedOperationException("Not supported yet."); 
     }
+    
+    public void addDuck(String name) {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
 
     public void addCat(String name) {
         throw new UnsupportedOperationException("Not supported yet."); 
