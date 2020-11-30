@@ -29,6 +29,7 @@ public class Animal {
     private String address;
 
     private AnimalType animalType;
+    
 
     // getter and setters
     

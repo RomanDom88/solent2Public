@@ -65,6 +65,9 @@
                     <!-- post avoids url encoded parameters -->
                     <form action="./viewAnimal.jsp" method="post">
                         <input type="hidden" name="animalType" value="<%=animalType%>">
+                        Animal name<input type="text" name="animalName">
+                        Animal Type<input type="text" name="animalType">
+                        Address<input type="text" name="address">
                         <input type="hidden" name="action" value="createAnimal">
                         <button type="submit" >Create <%=animalType%></button>
                     </form> 
