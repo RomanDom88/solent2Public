@@ -78,19 +78,16 @@
 			errorMessage = "problem creating  Book " + e.getMessage();
 		}
 	} else if ("clearSearch".equals(action)) {
-		// TODO
-		// *********************************
-        // Add clear search code here
-        // *********************************
+		
 	}
 	
 	List<Book> bookList =new ArrayList<Book>();
-	
 	if ("searchBooks".equals(action)) {
-        // TODO
-		// *********************************
-        // Add search code here
-        // *********************************
+            Book bookDetails = new Book();
+            if (bookDetails.equals(bookTitleReq)||bookDetails.equals(bookAuthorReq)||bookDetails.equals(bookIsbnReq)) {
+                
+            }
+            
 	} else {
 		bookList = serviceFacade.retrieveAllBooks();
 	}
