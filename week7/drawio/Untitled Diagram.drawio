@@ -1,111 +1,147 @@
-<mxfile host="app.diagrams.net" modified="2020-12-02T23:11:52.197Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="Mkidn9F9ZYy0UTL5SaNe" version="13.10.4" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-02T23:12:07.376Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="e_t0aDqfVV7KH0jA4Cc9" version="13.10.4" type="github">
   <diagram id="sl6RY_0ubPZve0owpfZB" name="Page-1">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-1" value="Guest" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="70" y="405" width="30" height="60" as="geometry" />
+        <mxCell id="LA3idthI7YxttZNsIavN-1" value="Customer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="210" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-3" value="generateTicket.jsp" style="shape=umlBoundary;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="220" y="750" width="170" height="80" as="geometry" />
+        <mxCell id="LA3idthI7YxttZNsIavN-5" value="Create Ticket" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="110" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-4" value="Entity Object" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="260" y="570" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-5" value="Control Object" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="360" y="570" width="70" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-8" value="createTicket(String zonesStr, Date validFrom, Date validTo, String startStationStr);" style="endArrow=classic;html=1;entryX=-0.018;entryY=0.513;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.986;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="cLbTM227S8Gruj_jfsFJ-25" target="cLbTM227S8Gruj_jfsFJ-22">
-          <mxGeometry x="-0.0422" y="11" width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="510" y="186" as="sourcePoint" />
-            <mxPoint x="560" y="185" as="targetPoint" />
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-12" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.538;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="cLbTM227S8Gruj_jfsFJ-1" target="cLbTM227S8Gruj_jfsFJ-20">
+        <mxCell id="LA3idthI7YxttZNsIavN-7" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LA3idthI7YxttZNsIavN-1" target="LA3idthI7YxttZNsIavN-5">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="120" y="256" as="sourcePoint" />
-            <mxPoint x="250.50252531694173" y="400.25126265847075" as="targetPoint" />
-            <Array as="points" />
+            <mxPoint x="170" y="126.66666666666663" as="sourcePoint" />
+            <mxPoint x="240" y="110" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="160" y="230" />
+              <mxPoint x="160" y="150" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-15" value="Ticket Object" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1030" y="650" width="80" height="80" as="geometry" />
+        <mxCell id="LA3idthI7YxttZNsIavN-9" value="Open Gate" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="240" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-19" value="openGate(Ticket ticket, String zoneTravelled, Date currentTime);" style="endArrow=classic;html=1;entryX=-0.012;entryY=0.513;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.029;exitY=0.575;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="cLbTM227S8Gruj_jfsFJ-28" target="cLbTM227S8Gruj_jfsFJ-21">
-          <mxGeometry x="-0.0476" y="15" width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="520" y="426" as="sourcePoint" />
-            <mxPoint x="580" y="425" as="targetPoint" />
-            <Array as="points" />
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-20" value="openGate.jsp" style="shape=umlBoundary;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="190" y="385" width="170" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-21" value="GateEntryService" style="shape=umlBoundary;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="970" y="385" width="170" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-22" value="GateManagementService" style="shape=umlBoundary;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="970" y="750" width="170" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-23" value="GateManagementService" style="shape=umlBoundary;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="60" y="570" width="170" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-24" value="Ticket Object" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1030" y="290" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-25" value="Create Ticket" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="450" y="750" width="70" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-27" value="" style="endArrow=classic;html=1;exitX=1.006;exitY=0.55;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.014;entryY=0.538;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="cLbTM227S8Gruj_jfsFJ-3" target="cLbTM227S8Gruj_jfsFJ-25">
+        <mxCell id="LA3idthI7YxttZNsIavN-10" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LA3idthI7YxttZNsIavN-1" target="LA3idthI7YxttZNsIavN-9">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="280" as="sourcePoint" />
-            <mxPoint x="440" y="230" as="targetPoint" />
+            <mxPoint x="140" y="260" as="sourcePoint" />
+            <mxPoint x="250" y="190" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="160" y="230" />
+              <mxPoint x="160" y="280" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-28" value="Open Gate" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="440" y="380" width="70" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-30" value="" style="endArrow=classic;html=1;exitX=1.018;exitY=0.513;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.014;entryY=0.575;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="cLbTM227S8Gruj_jfsFJ-20" target="cLbTM227S8Gruj_jfsFJ-28">
+        <mxCell id="LA3idthI7YxttZNsIavN-11" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LA3idthI7YxttZNsIavN-5" target="LA3idthI7YxttZNsIavN-12">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="480" as="sourcePoint" />
-            <mxPoint x="440" y="430" as="targetPoint" />
+            <mxPoint x="400" y="140" as="sourcePoint" />
+            <mxPoint x="420" y="150" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-35" value="Developer&lt;br&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="60" y="70" width="30" height="60" as="geometry" />
+        <mxCell id="LA3idthI7YxttZNsIavN-12" value="Insert details" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="110" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-36" value="Receptionist" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="70" y="760" width="30" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-37" value="ReST User&lt;br&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="60" y="950" width="30" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-38" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.006;entryY=0.488;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="cLbTM227S8Gruj_jfsFJ-36" target="cLbTM227S8Gruj_jfsFJ-3">
+        <mxCell id="LA3idthI7YxttZNsIavN-13" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="220" y="790" as="sourcePoint" />
-            <mxPoint x="270" y="740" as="targetPoint" />
+            <mxPoint x="520" y="149.5" as="sourcePoint" />
+            <mxPoint x="570" y="150" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-42" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.018;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="cLbTM227S8Gruj_jfsFJ-37" target="cLbTM227S8Gruj_jfsFJ-43">
+        <mxCell id="LA3idthI7YxttZNsIavN-16" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="190" y="975.48" as="sourcePoint" />
-            <mxPoint x="180" y="985" as="targetPoint" />
+            <mxPoint x="360" y="279.5" as="sourcePoint" />
+            <mxPoint x="400" y="279.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-43" value="ReST Interface" style="shape=umlBoundary;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="220" y="940" width="170" height="80" as="geometry" />
+        <mxCell id="LA3idthI7YxttZNsIavN-17" value="Insert Details" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="240" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-44" value="maven build&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0) ; font-family: monospace ; font-size: 0px&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22openGate.jsp%22%20style%3D%22shape%3DumlBoundary%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22190%22%20y%3D%22385%22%20width%3D%22170%22%20height%3D%2280%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="shape=umlBoundary;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="150" y="50" width="170" height="80" as="geometry" />
+        <mxCell id="LA3idthI7YxttZNsIavN-19" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="LA3idthI7YxttZNsIavN-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="280" as="sourcePoint" />
+            <mxPoint x="570" y="280" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-45" value="generate keys" style="shape=umlBoundary;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="510" y="50" width="170" height="80" as="geometry" />
+        <mxCell id="LA3idthI7YxttZNsIavN-37" value="Generate Ticket" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="110" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="cLbTM227S8Gruj_jfsFJ-46" value="AssymetricCryptography" style="shape=umlBoundary;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="830" y="50" width="170" height="80" as="geometry" />
+        <mxCell id="LA3idthI7YxttZNsIavN-40" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="LA3idthI7YxttZNsIavN-37">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="450" as="sourcePoint" />
+            <mxPoint x="750" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LA3idthI7YxttZNsIavN-41" value="Display Ticket" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="110" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LA3idthI7YxttZNsIavN-43" value="Check the ticket" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="240" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LA3idthI7YxttZNsIavN-47" value="Developer Build System&lt;br&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="520" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LA3idthI7YxttZNsIavN-50" value="ReST user" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="820" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LA3idthI7YxttZNsIavN-53" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="LA3idthI7YxttZNsIavN-47" target="LA3idthI7YxttZNsIavN-54">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="690" as="sourcePoint" />
+            <mxPoint x="220" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LA3idthI7YxttZNsIavN-54" value="generate public and private keys" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="500" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LA3idthI7YxttZNsIavN-55" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="LA3idthI7YxttZNsIavN-50">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="850" as="sourcePoint" />
+            <mxPoint x="260" y="920" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="160" y="840" />
+              <mxPoint x="160" y="920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LA3idthI7YxttZNsIavN-56" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="LA3idthI7YxttZNsIavN-50">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="920" as="sourcePoint" />
+            <mxPoint x="260" y="760" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="160" y="840" />
+              <mxPoint x="160" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LA3idthI7YxttZNsIavN-57" value="Ticket createTicket(zones, validFrom, validTo, startingStation)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="720" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LA3idthI7YxttZNsIavN-58" value="openGate(Ticket ticket, time, zoneTravelled" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="880" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LA3idthI7YxttZNsIavN-60" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="919.5" as="sourcePoint" />
+            <mxPoint x="460" y="919.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LA3idthI7YxttZNsIavN-61" value="Check zones, validFrom, validTo, startStation" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="610" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LA3idthI7YxttZNsIavN-62" value="Parse validFrom and validTo" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="610" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LA3idthI7YxttZNsIavN-64" value="set replyMessage" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="610" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LA3idthI7YxttZNsIavN-67" value="return response" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="610" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LA3idthI7YxttZNsIavN-70" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="759.5" as="sourcePoint" />
+            <mxPoint x="460" y="759.5" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
